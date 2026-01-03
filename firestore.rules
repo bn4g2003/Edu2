@@ -1,0 +1,64 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Collection users - Cho phép đọc/ghi tự do
+    match /users/{userId} {
+      allow read, write: if true;
+    }
+    
+    // Collection courses
+    match /courses/{courseId} {
+      allow read, write: if true;
+    }
+    
+    // Collection lessons
+    match /lessons/{lessonId} {
+      allow read, write: if true;
+    }
+    
+    // Collection progress - Lưu tiến độ học
+    match /progress/{progressId} {
+      allow read, write: if true;
+    }
+    
+    // Collection questions - Câu hỏi bài kiểm tra
+    match /questions/{questionId} {
+      allow read, write: if true;
+    }
+    
+    // Collection quizResults - Kết quả bài kiểm tra
+    match /quizResults/{resultId} {
+      allow read, write: if true;
+    }
+    
+    // Collection enrollments - Đăng ký khóa học
+    match /enrollments/{enrollmentId} {
+      allow read, write: if true;
+    }
+    
+    // Collection departments - Quản lý phòng ban
+    match /departments/{departmentId} {
+      allow read, write: if true;
+    }
+    
+    // Collection salaryRecords - Quản lý lương
+    match /salaryRecords/{recordId} {
+      allow read, write: if true;
+    }
+    
+    // Collection companySettings - Cài đặt công ty
+    match /companySettings/{settingId} {
+      allow read, write: if true;
+    }
+    
+    // Collection attendanceRecords - Chấm công
+    match /attendanceRecords/{recordId} {
+      allow read, write: if true;
+    }
+    
+    // Collection monthlySalaries - Lương tháng
+    match /monthlySalaries/{salaryId} {
+      allow read, write: if true;
+    }
+  }
+}

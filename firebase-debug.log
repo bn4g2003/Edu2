@@ -1,0 +1,65 @@
+[debug] [2026-01-03T10:17:35.945Z] ----------------------------------------------------------------------
+[debug] [2026-01-03T10:17:35.953Z] Command:       E:\Program\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2026-01-03T10:17:35.954Z] CLI Version:   15.1.0
+[debug] [2026-01-03T10:17:35.954Z] Platform:      win32
+[debug] [2026-01-03T10:17:35.954Z] Node Version:  v22.14.0
+[debug] [2026-01-03T10:17:35.955Z] Time:          Sat Jan 03 2026 17:17:35 GMT+0700 (Giờ Đông Dương)
+[debug] [2026-01-03T10:17:35.955Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-03T10:17:40.861Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-03T10:17:40.862Z] > authorizing via signed-in user (nhatbangnguyenhet@gmail.com)
+[debug] [2026-01-03T10:17:40.863Z] [iam] checking project dayhoctructuyenquavideo for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2026-01-03T10:17:40.866Z] Checked if tokens are valid: false, expires at: 1767435113712
+[debug] [2026-01-03T10:17:40.867Z] Checked if tokens are valid: false, expires at: 1767435113712
+[debug] [2026-01-03T10:17:40.867Z] > refreshing access token with scopes: []
+[debug] [2026-01-03T10:17:40.873Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-01-03T10:17:40.873Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-03T10:17:41.250Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-01-03T10:17:41.251Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-03T10:17:41.266Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dayhoctructuyenquavideo:testIamPermissions [none]
+[debug] [2026-01-03T10:17:41.266Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/dayhoctructuyenquavideo:testIamPermissions x-goog-quota-user=projects/dayhoctructuyenquavideo
+[debug] [2026-01-03T10:17:41.266Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dayhoctructuyenquavideo:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2026-01-03T10:17:42.407Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/dayhoctructuyenquavideo:testIamPermissions 200
+[debug] [2026-01-03T10:17:42.408Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dayhoctructuyenquavideo:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2026-01-03T10:17:42.409Z] Checked if tokens are valid: true, expires at: 1767439060251
+[debug] [2026-01-03T10:17:42.409Z] Checked if tokens are valid: true, expires at: 1767439060251
+[debug] [2026-01-03T10:17:42.410Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dayhoctructuyenquavideo [none]
+[debug] [2026-01-03T10:17:42.916Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dayhoctructuyenquavideo 200
+[debug] [2026-01-03T10:17:42.916Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dayhoctructuyenquavideo {"projectId":"dayhoctructuyenquavideo","projectNumber":"989572036444","displayName":"dayhoctructuyenquavideo","name":"projects/dayhoctructuyenquavideo","resources":{"hostingSite":"dayhoctructuyenquavideo"},"state":"ACTIVE","etag":"1_14cf0c6a-2e8f-40bf-9afd-ed3995ea5b53"}
+[debug] [2026-01-03T10:17:50.953Z] Checked if tokens are valid: true, expires at: 1767439060251
+[debug] [2026-01-03T10:17:50.953Z] Checked if tokens are valid: true, expires at: 1767439060251
+[debug] [2026-01-03T10:17:50.953Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/dayhoctructuyenquavideo/sites pageToken=&pageSize=10
+[debug] [2026-01-03T10:17:52.443Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/dayhoctructuyenquavideo/sites 200
+[debug] [2026-01-03T10:17:52.443Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/dayhoctructuyenquavideo/sites {"sites":[{"name":"projects/dayhoctructuyenquavideo/sites/dayhoctructuyenquavideo","defaultUrl":"https://dayhoctructuyenquavideo.web.app","appId":"1:989572036444:web:6f83a36aeb5513267c7399","type":"DEFAULT_SITE"}]}
+[debug] [2026-01-03T10:17:52.444Z] Checked if tokens are valid: true, expires at: 1767439060251
+[debug] [2026-01-03T10:17:52.444Z] Checked if tokens are valid: true, expires at: 1767439060251
+[debug] [2026-01-03T10:17:52.444Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:989572036444:web:6f83a36aeb5513267c7399/config [none]
+[debug] [2026-01-03T10:17:53.288Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:989572036444:web:6f83a36aeb5513267c7399/config 200
+[debug] [2026-01-03T10:17:53.289Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:989572036444:web:6f83a36aeb5513267c7399/config {"projectId":"dayhoctructuyenquavideo","appId":"1:989572036444:web:6f83a36aeb5513267c7399","storageBucket":"dayhoctructuyenquavideo.firebasestorage.app","apiKey":"AIzaSyAUMACtBg9EOFqM1RniDJh8F7Ed3X1ttok","authDomain":"dayhoctructuyenquavideo.firebaseapp.com","messagingSenderId":"989572036444","measurementId":"G-CEDYBETVF1","projectNumber":"989572036444","version":"2"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2026-01-03T10:18:03.618Z] Checked if tokens are valid: true, expires at: 1767439060251
+[debug] [2026-01-03T10:18:03.619Z] Checked if tokens are valid: true, expires at: 1767439060251
+[debug] [2026-01-03T10:18:03.619Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/dayhoctructuyenquavideo/sites/dayhoctructuyenquavideo [none]
+[debug] [2026-01-03T10:18:05.006Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/dayhoctructuyenquavideo/sites/dayhoctructuyenquavideo 200
+[debug] [2026-01-03T10:18:05.006Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/dayhoctructuyenquavideo/sites/dayhoctructuyenquavideo {"name":"projects/dayhoctructuyenquavideo/sites/dayhoctructuyenquavideo","defaultUrl":"https://dayhoctructuyenquavideo.web.app","appId":"1:989572036444:web:6f83a36aeb5513267c7399","type":"DEFAULT_SITE"}
+[info] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+
+[info]    ▲ Next.js 16.0.3 (Turbopack)
+
+[info]    - Environments: .env.local
+
+
+[info]    Creating an optimized production build ...
+
+[info] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+
